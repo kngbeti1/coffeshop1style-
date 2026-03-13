@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 0%);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    padding: 20px 50px;
+    border-bottom: 4px solid hsl(0, 4%, 35%);
+}
+
+.logo h2 {
+    color: hsl(0, 25%, 95%);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 38%, 97%);
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 100%); 
+    color: hsl(0, 0%, 0%);
+    border: 2px solid hsla(0, 0%, 8%, 0.941);
+    cursor: pointer;
+}
+ .fresh-coffee-image{
+    text-align: right;
+ }
+ .fresh-coffee-image img {
+    max-width: 100%;
+    height: auto;
+    
+ }
+
+/* Fresh Coffee Section */
+.fresh-coffee {
+    display: flex;
+    padding: 60px 50px;
+    gap: 50px;
+    align-items: center;
+}
+
+.fresh-coffee-content {
+    flex: 1;
+}
+
+.fresh-coffee-content h2 {
+    font-size: 42px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+
+.fresh-coffee-content p {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.fresh-coffee-image {
+    flex: 1;
+    text-align: center;
+}
+
+.fresh-coffee-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.footer{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 60px 50px 30px 50px;
+    background-color: transparent;
+    border-top: 4px solid hsl(0, 4%, 35%);
+} 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero, .fresh-coffee {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-content h1, .fresh-coffee-content h2 {
+        font-size: 32px;
+    }
+
+    .menu-nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .blog-section {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .blog-left {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
